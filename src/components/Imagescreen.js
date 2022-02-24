@@ -33,47 +33,49 @@ const Imagescreen = () => {
                 </View>
 
             </View>
-            <View style={{ backgroundColor: 'red', justifyContent: 'center' }}>
 
-                <Image source={require("../../assets/image/sidearrow.jpg")}
-                    style={styles.arrow}
-                />
-            </View>
-            <View style={{ alignSelf: 'flex-end', alignContent: 'center', backgroundColor: 'green' }}>
-                <Image source={require("../../assets/image/arrowTwo.jpg")}
-                    style={styles.arrow}
-                />
-            </View>
             <View style={styles.Lower}>
 
-
-
-
-
-
+                <View>
+                    <Image source={require("../../assets/image/sidearrow.jpg")}
+                        style={styles.arrow}
+                    />
+                </View>
 
                 <View style={styles.LowerWrapper}>
                     <Image source={require("../../assets/image/C.png")}
                         style={styles.LowerImg}
                     />
-                    <Text style={styles.TextWrapper}>FootPrint&
-                        Location</Text>
+                    <Text style={styles.TextWrapper}>FootPrint &
+                    </Text>
+                    <Text style={styles.TextWrapper}>Location</Text>
                 </View>
                 <View style={styles.LowerWrapper}>
                     <Image source={require("../../assets/image/trophygold.png")}
                         style={styles.LowerImg}
                     />
-                    <Text style={styles.TextWrapper}>Reward&
-                        Certification</Text>
+                    <Text style={styles.TextWrapper}>Reward &
+                    </Text>
+                    <Text style={styles.TextWrapper}>Certification</Text>
                 </View>
                 <View style={styles.LowerWrapper}>
                     <Image source={require("../../assets/image/review.png")}
                         style={styles.LowerImg}
                     />
                     <Text style={styles.TextWrapper}>Feedback &
-                        comments</Text>
+                    </Text>
+                    <Text style={styles.TextWrapper}>comments</Text>
+                </View>
+
+                <View style={{ alignItems: 'flex-start', justifyContent: 'flex-start', }}>
+
+                    <Image source={require("../../assets/image/arrowTwo.jpg")}
+                        style={styles.arrow}
+                    />
+
                 </View>
             </View>
+
 
         </View>
     );
@@ -134,6 +136,5 @@ const styles = StyleSheet.create({
         width: 30,
         height: 30,
         resizeMode: 'stretch',
-
     }
 });
