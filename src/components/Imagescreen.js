@@ -13,15 +13,16 @@ const Imagescreen = () => {
                         style={styles.ImgWrapper}
                     />
                     <Text style={styles.TextWrapper}>Product
-                        Category</Text>
+                    </Text>
+                    <Text style={styles.TextWrapper}>Category</Text>
                 </View>
                 <View style={styles.Wrapper}>
                     <Image
                         source={require("../../assets/image/trophy.png")}
                         style={styles.ImgWrapper}
                     />
-                    <Text style={styles.TextWrapper}>Best
-                        Selling products </Text>
+                    <Text style={styles.TextWrapper}>Best Selling</Text>
+                    <Text style={styles.TextWrapper}>products</Text>
                 </View>
                 <View style={styles.Wrapper}>
                     <Image
@@ -29,14 +30,14 @@ const Imagescreen = () => {
                         style={styles.ImgWrapper}
                     />
                     <Text style={styles.TextWrapper}>Product
-                        List</Text>
+                    </Text ><Text style={styles.TextWrapper}>List</Text>
                 </View>
 
             </View>
 
             <View style={styles.Lower}>
 
-                <View>
+                <View style={{ alignItems: 'baseline', justifyContent: 'center' }}>
                     <Image source={require("../../assets/image/sidearrow.jpg")}
                         style={styles.arrow}
                     />
@@ -51,7 +52,7 @@ const Imagescreen = () => {
                     <Text style={styles.TextWrapper}>Location</Text>
                 </View>
                 <View style={styles.LowerWrapper}>
-                    <Image source={require("../../assets/image/trophygold.png")}
+                    <Image source={require("../../assets/image/Award.png")}
                         style={styles.LowerImg}
                     />
                     <Text style={styles.TextWrapper}>Reward &
@@ -67,7 +68,7 @@ const Imagescreen = () => {
                     <Text style={styles.TextWrapper}>comments</Text>
                 </View>
 
-                <View style={{ alignItems: 'flex-start', justifyContent: 'flex-start', }}>
+                <View style={{ alignItems: 'baseline', justifyContent: 'center' }}>
 
                     <Image source={require("../../assets/image/arrowTwo.jpg")}
                         style={styles.arrow}
@@ -86,7 +87,7 @@ export default Imagescreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'space-evenly', alignItems: 'baseline'
+        justifyContent: 'space-around', alignItems: 'baseline'
     },
     Header: {
         flexDirection: 'row',
@@ -100,41 +101,37 @@ const styles = StyleSheet.create({
     },
     ImgWrapper: {
         resizeMode: 'cover',
-        height: 60,
-        width: 60,
+        height: 65,
+        width: 65,
         alignSelf: 'center',
 
     },
     TextWrapper: {
-        fontSize: 10,
+        fontSize: 30 * 0.3,
         textAlign: 'center',
-        direction: 'rtl',
-        // alignSelf: 'center',
+        direction: 'rtl', fontWeight: 'bold'
 
     },
     Lower: {
-        top: 10,
         flexDirection: 'row',
         display: 'flex',
-        justifyContent: 'space-between',
+        justifyContent: 'space-between', paddingLeft: 6, alignItems: 'center', alignSelf: 'center'
 
     },
     LowerWrapper: {
         width: 100,
-        height: 80,
-
-
+        height: 80
 
     },
     LowerImg: {
         width: 80,
         height: 80,
         resizeMode: 'stretch',
-        alignSelf: 'center',
+        alignSelf: 'center'
     },
     arrow: {
-        width: 30,
-        height: 30,
-        resizeMode: 'stretch',
+        width: 24,
+        height: 24,
+        resizeMode: 'stretch'
     }
 });

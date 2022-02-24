@@ -11,7 +11,7 @@ const Video = () => {
                 allowsInlineMediaPlayback={true}
                 javaScriptEnabled={true}
                 domStorageEnabled={true}
-                source={{ uri: 'https://www.youtube.com/embed/dA0VGEbbw4g?playlist=dA0VGEbbw4g&loop=1&modestbranding=1&controls=0&autoplay=2&disablekb=1&fs=0' }}
+                source={{ uri: 'https://www.youtube.com/embed/dA0VGEbbw4g?playlist=dA0VGEbbw4g&loop=1&modestbranding=1&controls=0&autoplay=1&disablekb=1&fs=0' }}
             />
         </View>
     )
@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
     container: {
 
         width: "100%",
-        height: 200,
+        height: 210,
 
-        marginTop: 10, backgroundColor: 'red'
+        marginTop: 2
     },
 })
